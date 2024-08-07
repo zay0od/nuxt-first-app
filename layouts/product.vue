@@ -1,47 +1,58 @@
 <template>
   <div>
-    <h2>Product Layout</h2>
-    <header>
+    <header
+      class="container mx-auto py-5 flex align-middle justify-between border-b"
+    >
+      <h2 class="text-xl font-extrabold">Nuxt App</h2>
       <nav>
-        <NuxtLink to="/">Home</NuxtLink>
+        <ul class="flex justify-end gap-10">
+          <li>
+            <NuxtLink to="/">Home</NuxtLink>
+          </li>
+
+          <li>
+            <NuxtLink to="/products">Products</NuxtLink>
+          </li>
+
+          <li>
+            <NuxtLink to="/about">About Us</NuxtLink>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <!--Output the page conent-->
-    <main>
-      <!-- <slot /> -->
+    <main class="container mx-auto h-screen py-5">
       <NuxtPage />
     </main>
     <!--Output the page conent-->
 
-    <footer>
-      <ul>
-        <li>
-          <NuxtLink to="/">Home</NuxtLink>
-        </li>
+    <div class="bg-[#d8dbca]">
+      <footer class="container mx-auto">
+        <ul class="flex justify-between py-10">
+          <li>
+            <NuxtLink to="/">Home</NuxtLink>
+          </li>
 
-        <li>
-          <NuxtLink to="/products">Products</NuxtLink>
-        </li>
+          <li>
+            <NuxtLink to="/products">Products</NuxtLink>
+          </li>
 
-        <li>
-          <NuxtLink to="/about">About Us</NuxtLink>
-        </li>
-      </ul>
-    </footer>
+          <li>
+            <NuxtLink to="/about">About Us</NuxtLink>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </div>
 </template>
 
 <script setup></script>
 
 <style scoped>
-header {
-  border: 1px solid blue;
-  background-color: rgb(243, 240, 240);
-}
-main {
-  background-color: rgb(137, 198, 211);
-  min-height: 40vh;
+ul li {
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 .router-link-exact-active {
   color: rgb(6, 135, 32);
