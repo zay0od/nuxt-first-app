@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  @apply border-4;
-} */
+.main {
+  min-height: 50vh;
+}
+
+@layer components {
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+}
