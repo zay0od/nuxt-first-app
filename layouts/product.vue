@@ -11,7 +11,11 @@
           </li>
 
           <li>
-            <NuxtLink to="/products">Products</NuxtLink>
+            <NuxtLink
+              to="/products"
+              :class="{ 'active-link': $route.path.startsWith('/products') }"
+              >Products</NuxtLink
+            >
           </li>
 
           <li>
@@ -54,7 +58,16 @@ ul li {
   font-size: 0.9rem;
   font-weight: 400;
 }
-.router-link-exact-active {
+
+/* Define the active-link class for custom styling */
+.active-link {
+  color: rgb(6, 135, 32);
+  font-weight: bold;
+}
+
+/* Keep the default active classes as well */
+.router-link-exact-active,
+.router-link-active {
   color: rgb(6, 135, 32);
   font-weight: bold;
 }
