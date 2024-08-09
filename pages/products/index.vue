@@ -1,8 +1,6 @@
 <template>
-  <div class="grid grid-cols-4 border gap-4 text-center">
-    <div v-for="p in products" :key="p.id">
-      <NuxtLink :to="`products/${p.id}`"> {{ p.title }}</NuxtLink>
-    </div>
+  <div class="grid grid-cols-4 gap-4 text-center">
+    <ProductsList v-for="p in products" :key="p.id" :product="p" />
   </div>
 </template>
 
