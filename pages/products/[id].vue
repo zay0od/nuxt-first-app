@@ -1,5 +1,7 @@
 <template>
-  <div>Product: {{ product }}</div>
+  <div>
+    <ProductDetails :product="product" />
+  </div>
 </template>
 
 <script setup>
