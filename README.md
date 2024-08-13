@@ -2,6 +2,8 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+##Demo Link: [DEMO](https://zayed-nuxt-demo.netlify.app/)
+
 ## Setup
 
 Make sure to install the dependencies:
