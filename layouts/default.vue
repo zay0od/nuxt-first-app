@@ -26,7 +26,7 @@
     </header>
 
     <!--Output the page conent-->
-    <main class="container mx-auto py-5">
+    <main class="h-100-vh container mx-auto py-5">
       <NuxtPage />
     </main>
     <!--Output the page conent-->

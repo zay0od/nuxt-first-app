@@ -6,6 +6,10 @@
   min-height: 50vh;
 }
 
+.h-100-vh {
+  min-height: 100vh;
+}
+
 @layer components {
   .card {
     @apply p-3 rounded-md bg-white shadow-md h-full;
